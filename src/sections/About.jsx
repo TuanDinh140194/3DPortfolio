@@ -133,16 +133,21 @@ const About = () => {
             /> */}
             <div className="relative">
               <video
-                className=" w-full sm:h-[266px] h-fit object-cover rounded-2xl"
+                className=" w-full sm:h-[266px] h-fit object-cover rounded-2xl sm:block hidden"
                 autoPlay
                 loop
                 ref={videoRef}
               >
                 <source src="textures/project/Tech.mp4" type="video/mp4" />
               </video>
+              <img
+                className="w-full sm:hidden h-fit object-cover rounded-2xl"
+                src="assets/grid3.png" // Update with the actual path to your image
+                alt="Image mobile"
+              />
               <button
                 onClick={toggleMute}
-                className="absolute bottom-2 right-2 text-white  bg-white-600 px-3 py-1 rounded shadow-lg opacity-80 hover:opacity-100 transition duration-300"
+                className="sm:block hidden absolute bottom-2 right-2 text-white  bg-white-600 px-3 py-1 rounded shadow-lg opacity-80 hover:opacity-100 transition duration-300"
               >
                 <img
                   src={isMuted ? "assets/speakOn.svg" : "assets/speakOff.svg"}
