@@ -141,7 +141,7 @@ const About = () => {
                 <source src="textures/project/Tech.mp4" type="video/mp4" />
               </video>
               <img
-                className="w-full sm:hidden h-fit object-cover rounded-2xl"
+                className="w-full sm:hidden h-fit object-contain rounded-2xl"
                 src="assets/grid3.png" // Update with the actual path to your image
                 alt="Image mobile"
               />
